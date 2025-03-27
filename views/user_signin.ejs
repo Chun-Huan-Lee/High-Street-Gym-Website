@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("partials/head.ejs") %>
+        <title>high street gym - User Sign in</title>
+</head>
+
+<body>
+    <main>
+        <%- include("partials/header.ejs") %>
+        <section class="login">
+            <form action="#" method="post" class="form-grid">
+                <h1>Sign in</h1>
+                <div class="inputbox">
+                    <i class="bx bx-user"></i>
+                    <input placeholder="First Name" name="first_name" type="text" pattern="[A-Za-z]+" title="Please enter only alphabetic characters" required>
+                </div>
+                <div class="inputbox">
+                    <i class="bx bx-user"></i>
+                    <input placeholder="Last Name" name="last_name" type="text" pattern="[A-Za-z]+" title="Please enter only alphabetic characters" required>
+                </div>
+                <div class="inputbox">
+                    <i class="bx bx-envelope"></i>
+                    <input placeholder="Email" name="email" type="email" required>
+                </div>
+                <div class="inputbox">
+                    <i class='bx bx-phone'></i>
+                    <input placeholder="Phone" name="phones" type="tel" pattern="[0-9]{10}" maxlength="10" title="Please enter a 10-digit phone number" required>
+                </div>
+                <div class="inputbox">
+                    <i class="bx bx-lock-alt"></i>
+                    <input placeholder="Password" name="password" type="password" minlength="8" maxlength="20" title="Password must be between 8 and 20 characters" required>
+                </div>
+        
+                <span>Already have a account ?</span>
+                <a href="/user_login">Create a new account</a>
+                <br>
+                <input class="sub" type="submit" value="Sign in">
+                <br>
+                <span class="help-text" onclick="openPopup()">help ?</span>
+        
+                <div id="popup" class="popup">
+                    <video id="helpVideo" controls>
+                        <source src="video/signin_help.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="close-btn" onclick="closePopup()"><i class='bx bxs-x-circle' ></i></span>
+                </div>
+            </form>
+        </section>
+            <%- include("partials/footer.ejs") %>
+    </main>
+    <script>
+        function openPopup() {
+          document.getElementById("popup").style.display = "block";
+        }
+    
+        function closePopup() {
+          document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

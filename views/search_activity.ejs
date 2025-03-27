@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("partials/head.ejs") %>
+        <title>high street gym - Activity</title>
+    </head>
+    <body>
+        <main>
+            <%- include("partials/header.ejs") %>
+            <form action="search_activity" method="get"
+                class="search-form">
+                <input type="text" name="search_term" id="search-term"
+                    placeholder="Yoga" />
+                <input type="submit" value="Search" />
+            </form>
+            <section class="gym-list">
+                
+                <article class="gym-card">
+                    <h2>Yoga</h2>
+                    <span>Activity Duration: 60 min</span>
+                    <p>An ancient practice that combines physical postures, breathing techniques, and meditation or relaxation. Yoga helps improve flexibility, strength, balance, and mental well-being.</p>
+                    <a
+                        href="#">Booking</a>
+                </article>
+                <article class="gym-card">
+                    <h2>Pilates</h2>
+                    <span>Activity Duration: 60 min</span>
+                    <p>A low-impact exercise system that emphasizes proper postural alignment, core strength, and muscle balance. Pilates is performed on a mat or with specialized equipment, focusing on controlled movements and breath.</p>
+                    <a
+                        href="#">Booking</a>
+                </article>
+                <article class="gym-card">
+                    <h2>Abs</h2>
+                    <span>Activity Duration: 80 min</span>
+                    <p>Exercises that target the abdominal muscles, including the rectus abdominis, obliques, and transverse abdominis. These exercises help improve core strength, stability, and posture.</p>
+                    <a
+                        href="#">Booking</a>
+                </article>
+                <article class="gym-card">
+                    <h2>HIIT</h2>
+                    <span>Activity Duration: 60 min</span>
+                    <p>High-Intensity Interval Training is a cardiovascular exercise strategy alternating short periods of intense anaerobic exercise with less intense recovery periods. HIIT is designed to improve athletic capacity, condition, and fat burning.</p>
+                    <a
+                        href="#">Booking</a>
+                </article>
+                <article class="gym-card">
+                    <h2>Indoor Cycling</h2>
+                    <span>Activity Duration: 40 min</span>
+                    <p>A cardiovascular workout performed on a stationary bicycle in a group fitness setting. The instructor leads the class through various intensity levels and simulated terrain, providing a challenging and engaging workout.</p>
+                    <a
+                        href="#">Booking</a>
+                </article>
+                <article class="gym-card">
+                    <h2>Boxing</h2>
+                    <span>Activity Duration: 30 min</span>
+                    <p>A combat sport that involves punching techniques, footwork, and defensive maneuvers. Boxing-inspired fitness classes incorporate elements of the sport, such as shadowboxing, bag work, and mitt work, to provide a full-body workout.</p>
+                    <a
+                        href="#">Booking</a>
+                </article>
+                <article class="gym-card">
+                    <h2>Zumba</h2>
+                    <span>Activity Duration: 60 min</span>
+                    <p>A dance-based fitness program that incorporates various styles of Latin and international music. Zumba classes feature choreographed routines designed to provide a fun, engaging, and effective cardiovascular workout.</p>
+                    <a
+                        href="#">Booking</a>
+                </article>
+               
+            </section>
+            <%- include("partials/footer.ejs") %>
+        </main>
+    </body>
+</html>

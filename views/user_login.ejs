@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("partials/head.ejs") %>
+        <title>high street gym - User Login</title>
+</head>
+
+<body>
+    <main>
+        <%- include("partials/header.ejs") %>
+            <section class="login">
+                <form action="#" method="post" class="form-grid">
+                    <h1>Login</h1>
+                    <div class="inputbox">
+                        <i class="bx bx-envelope"></i>
+                        <input placeholder="Email" name="email" type="email" required>
+                    </div>
+                    <div class="inputbox">
+                        <i class="bx bx-lock-alt"></i>
+                        <input placeholder="Password" name="password" type="password" minlength="8" maxlength="20"
+                            title="Password must be between 8 and 20 characters" required>
+                    </div>
+
+                    <span>Dont have a account ?</span>
+                    <a href="/user_signin">Create a new account</a>
+                    <br>
+                    <input class="sub" type="submit" value="Login">
+                    <br>
+                    <span class="help-text" onclick="openPopup()">
+                        help ?
+                    </span>
+
+                    <div id="popup" class="popup">
+                        <video id="helpVideo" controls>
+                            <source src="video/login_help.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <span class="close-btn" onclick="closePopup()"><i class='bx bxs-x-circle'></i></span>
+                    </div>
+                </form>
+
+            </section>
+            <%- include("partials/footer.ejs") %>
+    </main>
+    <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+</body>
+
+
+
+</html>

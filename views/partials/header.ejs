@@ -1,0 +1,35 @@
+<header class="header">
+    <a href="/" class="logo">High Street Gym</a>
+    <div class="links">
+        <a href="/">Home</a>
+        <a href="/index#AboutUs">About Us</a>
+        <a href="/blogs">Blog</a>
+        <a href="/search_activity">Booking</a>
+    </div>
+    <div class="login_button">
+        <div>
+            <input type="button" class="signin" value="Get Started" onclick="location.href='/user_signin'">
+        </div>
+        <div class="user_login">
+            <a href="/user_login">Login
+                <i class='bx bx-log-in bx-tada bx-flip-horizontal' ></i>
+            </a>
+        </div>
+    </div>
+    <div class="burger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
+<script>
+    const burgerMenu = document.querySelector('.burger-menu');
+    const links = document.querySelector('.links');
+    const loginButton = document.querySelector('.login_button');
+
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        links.classList.toggle('active');
+        loginButton.classList.toggle('active');
+    });
+</script>
