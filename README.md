@@ -2,7 +2,7 @@
 
 A modern, responsive web application for High Street Gym, offering features such as user authentication, activity booking, and a blog system.
 
-![High Street Gym](screenshot-url-here.png)
+![High Street Gym](static/img/PC_Pic.png)
 
 ## 🏋️ Features
 
